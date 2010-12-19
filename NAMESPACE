@@ -1,1 +1,2 @@
+#useDynLib(command_wrapper)
 export(sdb4)

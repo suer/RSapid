@@ -1,9 +1,3 @@
-.First.lib <- function(lib, pkg) {
-    print("hoge")
-    library.dynam("command_wrapper", pkg, lib)
-}
-print("hoge")
-
 sdb4 <- function(filelist, sdbDirectory="SDB", targetProgramName="a.out") {
   command <- paste("-sdbd", sdbDirectory, "-o", targetProgramName, sep=" ")
   files <- ""
@@ -15,3 +9,13 @@ sdb4 <- function(filelist, sdbDirectory="SDB", targetProgramName="a.out") {
   print(result)
 }
 
+
+.onLoad <- function(lib, pkg) {
+  print("hoge")
+#  library.dynam(paste(lib, "libs/command_wrapper", sep="/"), pkg, lib)
+  print(lib)
+  print(pkg)
+  library.dynam("command_wrapper.so", pkg, lib)
+#  print(paste(pkg, lib, "command_wrapper", sep="/"))
+#  dyn.load(paste(lib, pkg, "libs/command_wrapper.so", sep="/"))
+}
