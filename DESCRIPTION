@@ -1,0 +1,10 @@
+Package: RSapid
+Type: Package
+Title: RSapid
+Version: 0.0.1
+Date: 2010-12-18
+Author: R.Suetsugu
+Maintainer: sue@netreqs.co.jp <sue@netreqs.co.jp>
+Description: Sapid (Sophisticated API for CASE Tool Development) wrapper
+License: 
+LazyLoad: yes
