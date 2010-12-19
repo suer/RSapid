@@ -1,2 +1,5 @@
 #useDynLib(command_wrapper)
+#useDynLib(SapidAR4Wrapper)
 export(sdb4)
+export(spdUseModel)
+export(spdFunctionDefList)

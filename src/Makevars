@@ -1,0 +1,2 @@
+PKG_CFLAGS=-I/usr/local/Sapid/Profiled-6.92.11/include  -DSAPID_AR4_KERNEL
+PKG_LIBS=-lSapidSMU -lSapidAR4 -lSapidPIDB -lSapidUtil -L/usr/local/Sapid/Profiled-6.92.11/lib 
