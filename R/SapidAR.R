@@ -9,3 +9,9 @@ spdFunctionDefList <- function() {
   print(flist)
   return(flist)
 }
+
+spdFunctionCallList <- function() {
+  flist <- .Call("spdFunctionCallList")
+  print(flist)
+  return(flist)
+}

@@ -3,3 +3,4 @@
 export(sdb4)
 export(spdUseModel)
 export(spdFunctionDefList)
+export(spdFunctionCallList)
