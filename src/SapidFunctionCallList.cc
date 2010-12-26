@@ -1,6 +1,4 @@
-#include <Rcpp.h>
-#include <stdio.h>
-#include <Sapid/Sapid.h>
+#include "SapidFunctionCallList.h"
 
 static SpdBoolean       spdOccIsDeclFuncdef(SpdOcc occ);
 static SpdBoolean       spdOccIsExpression(SpdOcc occ);
@@ -56,6 +54,7 @@ RcppExport SEXP spdFunctionCallList()
   }
   spdFreeObjIdArray(prog_buf);
   spdCloseSDB(db_id);
+  printf("hoge\n");
   return Rcpp::wrap(decl_calls); 
 }
 
